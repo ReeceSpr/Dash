@@ -12,10 +12,10 @@ import reece.com.dash.ui.main.onBoarding3_fragment;
 /*
     Drive for Mobile App Assignment
 
-    - Sort onBoarding Function
+    x Sort onBoarding Function
     - Add Animation
 
-    - Create CameraLayout
+    x Create CameraLayout
     - CameraActivity Permissions
     - Opt 1. Recording, double tap starts recording until long tapped
 
@@ -33,6 +33,9 @@ import reece.com.dash.ui.main.onBoarding3_fragment;
 public class MainActivity extends AppCompatActivity {
     private int currentFragmentFeature;
 
+    /*
+    Creates the layout
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,12 +47,19 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /*
+    TODO: We want to change this to be a gesture listener.
+    On activity touched.
+     */
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         changeFragment('R');
         return super.onTouchEvent(event);
     }
 
+    /*
+    Changes the fragment inside the activity.
+     */
     public void changeFragment(char direction){
         switch (direction){
             case 'L':
