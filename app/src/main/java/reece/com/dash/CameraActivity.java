@@ -32,8 +32,6 @@ import androidx.lifecycle.LifecycleOwner;
 
 import java.io.File;
 
-import reece.com.dash.ui.main.ImageAnalyzerBuffer;
-
 /*
 Use of CamneraX can be found on DOCS but it is written in Kotlin.
 A translation can be found here, I have used this in this class.
@@ -148,7 +146,6 @@ public class CameraActivity extends AppCompatActivity {
         } else{
             ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);
         }
-
     }
 
     @Override
@@ -278,9 +275,7 @@ public class CameraActivity extends AppCompatActivity {
 
         ImageAnalysisConfig imgAConfig = new ImageAnalysisConfig.Builder().setTargetResolution(new Size(1920,1080)).setImageReaderMode(ImageAnalysis.ImageReaderMode.ACQUIRE_LATEST_IMAGE).build();
         ImageAnalysis analysis = new ImageAnalysis(imgAConfig);
-
-        analysis.setAnalyzer( new ImageAnalyzerBuffer());
-
+        analysis.setAnalyzer( new ImageAnalyzerBuffer(this));
         //bind to lifecycle:
         CameraX.bindToLifecycle((LifecycleOwner)this, analysis, imgCap, preview);
     }
@@ -345,5 +340,7 @@ public class CameraActivity extends AppCompatActivity {
         }
         return true;
     }
+
+
 }
 
