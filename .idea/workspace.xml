@@ -11,24 +11,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f10a15b9-f2a3-4cb2-a492-69ea0feba4c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jcodec_jcodec_0_2_3_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/CircularArrayBuffer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/ImageAnalyzerBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +42,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="2768a78c000d7ece" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28_x86" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -52,78 +52,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="319" column="13" lean-forward="true" selection-start-line="319" selection-start-column="13" selection-end-line="319" selection-end-column="13" />
-              <folding>
-                <element signature="docComment;class#CameraActivity#0" />
-                <element signature="docComment;field#AUTO_HIDE#0;class#CameraActivity#0" />
-                <element signature="docComment;field#AUTO_HIDE_DELAY_MILLIS#0;class#CameraActivity#0" />
-                <element signature="docComment;field#UI_ANIMATION_DELAY#0;class#CameraActivity#0" />
-                <element signature="e#2570#2617#0" />
-                <element signature="e#3519#3568#1" />
-                <element signature="docComment;field#mDelayHideTouchListener#0;class#CameraActivity#0" />
-                <element signature="e#4237#4305#1" />
-                <element signature="method#onCreate#0;class#CameraActivity#0" />
-                <element signature="e#5038#5130#1" />
-                <element signature="e#5135#5247#1" />
-                <element signature="method#onPostCreate#0;class#CameraActivity#0" />
-                <element signature="e#5388#5453#0" />
-                <element signature="method#toggle#0;class#CameraActivity#0" />
-                <element signature="e#5628#5659#1" />
-                <element signature="e#5665#5696#1" />
-                <element signature="method#hide#0;class#CameraActivity#0" />
-                <element signature="e#5839#5880#1" />
-                <element signature="method#show#0;class#CameraActivity#0" />
-                <element signature="docComment;method#delayedHide#0;class#CameraActivity#0" />
-                <element signature="method#delayedHide#0;class#CameraActivity#0" />
-                <element signature="e#6942#7048#0" />
-                <element signature="method#getCameraPermissions#0;class#CameraActivity#0" />
-                <element signature="method#getCameraPreview#0;class#CameraActivity#0" />
-                <element signature="e#7280#7299#0" />
-                <element signature="e#8474#8493#0" />
-                <element signature="class#9163:9995" />
-                <element signature="method#onImageSaved#0;class#9163:9995" />
-                <element signature="method#onError#0;class#9163:9995" />
-                <element signature="e#9875#9955#1" />
-                <element signature="e#10033#10053#0" />
-                <element signature="method#updateTransform#0;class#CameraActivity#0" />
-                <element signature="e#10537#10803#0" />
-                <element signature="e#11171#11658#0" />
-                <element signature="method#onRequestPermissionsResult#0;class#CameraActivity#0" />
-                <element signature="e#12064#12345#1" />
-                <element signature="e#12105#12151#1" />
-                <element signature="e#12156#12335#1" />
-                <element signature="method#allPermissionsGranted#0;class#CameraActivity#0" />
-                <element signature="e#12504#12665#1" />
-                <element signature="e#12610#12655#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="84" column="18" lean-forward="true" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
+            <state relative-caret-position="1740">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
-              <folding>
-                <element signature="method#onCreate#0;class#MainActivity#0" />
-                <element signature="method#changeFragment#0;class#MainActivity#0" />
               </folding>
             </state>
           </provider>
@@ -135,15 +70,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="62" column="82" lean-forward="true" selection-start-line="62" selection-start-column="82" selection-end-line="62" selection-end-column="82" />
+            <state relative-caret-position="935">
+              <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,19 +118,19 @@
         <entry file="file://$PROJECT_DIR$/gradle.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
             </state>
           </provider>
-          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
     </leaf>
@@ -195,6 +148,7 @@
       <find>config</find>
       <find>imageButtonGallery</find>
       <find>Frick</find>
+      <find>throw</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,16 +159,16 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/layout/onboarding3_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/camera_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/ImageCircularBuffer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/ImageAnalyzerBuffer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/CircularArrayBuffer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularArrayBuffer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
       </list>
     </option>
   </component>
@@ -230,7 +184,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -268,18 +222,13 @@
             </path>
             <path>
               <item name="Dash" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="Dash" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -446,10 +395,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.5024311" side_tool="true" weight="0.18836713" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49756888" visible="true" weight="0.18836713" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49756888" visible="true" weight="0.18836713" />
       <window_info id="Structure" order="2" sideWeight="0.5008104" side_tool="true" weight="0.18836713" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -458,17 +406,16 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.330076" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" x="-2560" y="0" width="1280" height="700" id="Logcat" order="1" weight="0.3344191" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Android Profiler" order="3" sideWeight="0.4994664" weight="0.32790446" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" sideWeight="0.4994664" weight="0.32790446" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.32899022" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50053364" side_tool="true" weight="0.32790446" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Build" order="9" weight="0.32899022" />
+      <window_info anchor="bottom" id="Build" order="9" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Find" order="10" />
-      <window_info anchor="right" id="Assistant" weight="0.32977587" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -477,22 +424,17 @@
       <window_info anchor="right" id="Flutter Outline" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Preview" order="7" />
+      <window_info anchor="right" id="Assistant" order="8" weight="0.32977587" />
     </layout>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java</url>
-          <line>42</line>
+          <line>70</line>
           <properties />
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -582,12 +524,12 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding1_fragment.xml">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/graphics/BitmapFactory.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -597,8 +539,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding2_fragment.xml">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/onBoarding1_fragment.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -613,111 +555,45 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding3_fragment.xml">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera_activity.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="319" column="13" lean-forward="true" selection-start-line="319" selection-start-column="13" selection-end-line="319" selection-end-column="13" />
+        <state relative-caret-position="2958">
+          <caret line="326" column="16" selection-start-line="326" selection-start-column="16" selection-end-line="326" selection-end-column="16" />
           <folding>
             <element signature="docComment;class#CameraActivity#0" />
             <element signature="docComment;field#AUTO_HIDE#0;class#CameraActivity#0" />
             <element signature="docComment;field#AUTO_HIDE_DELAY_MILLIS#0;class#CameraActivity#0" />
             <element signature="docComment;field#UI_ANIMATION_DELAY#0;class#CameraActivity#0" />
-            <element signature="e#2570#2617#0" />
-            <element signature="e#3519#3568#1" />
             <element signature="docComment;field#mDelayHideTouchListener#0;class#CameraActivity#0" />
-            <element signature="e#4237#4305#1" />
             <element signature="method#onCreate#0;class#CameraActivity#0" />
-            <element signature="e#5038#5130#1" />
-            <element signature="e#5135#5247#1" />
             <element signature="method#onPostCreate#0;class#CameraActivity#0" />
-            <element signature="e#5388#5453#0" />
             <element signature="method#toggle#0;class#CameraActivity#0" />
-            <element signature="e#5628#5659#1" />
-            <element signature="e#5665#5696#1" />
             <element signature="method#hide#0;class#CameraActivity#0" />
-            <element signature="e#5839#5880#1" />
             <element signature="method#show#0;class#CameraActivity#0" />
             <element signature="docComment;method#delayedHide#0;class#CameraActivity#0" />
             <element signature="method#delayedHide#0;class#CameraActivity#0" />
-            <element signature="e#6942#7048#0" />
             <element signature="method#getCameraPermissions#0;class#CameraActivity#0" />
             <element signature="method#getCameraPreview#0;class#CameraActivity#0" />
-            <element signature="e#7280#7299#0" />
-            <element signature="e#8474#8493#0" />
-            <element signature="class#9163:9995" />
-            <element signature="method#onImageSaved#0;class#9163:9995" />
-            <element signature="method#onError#0;class#9163:9995" />
-            <element signature="e#9875#9955#1" />
-            <element signature="e#10033#10053#0" />
             <element signature="method#updateTransform#0;class#CameraActivity#0" />
-            <element signature="e#10537#10803#0" />
-            <element signature="e#11171#11658#0" />
-            <element signature="method#onRequestPermissionsResult#0;class#CameraActivity#0" />
-            <element signature="e#12064#12345#1" />
-            <element signature="e#12105#12151#1" />
-            <element signature="e#12156#12335#1" />
             <element signature="method#allPermissionsGranted#0;class#CameraActivity#0" />
-            <element signature="e#12504#12665#1" />
-            <element signature="e#12610#12655#1" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
+        <state relative-caret-position="765">
           <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
           <folding>
             <element signature="method#onCreate#0;class#MainActivity#0" />
@@ -726,20 +602,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="84" column="18" lean-forward="true" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
+        <state relative-caret-position="935">
+          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="62" column="82" lean-forward="true" selection-start-line="62" selection-start-column="82" selection-end-line="62" selection-end-column="82" />
+        <state relative-caret-position="238">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

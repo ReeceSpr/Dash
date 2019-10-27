@@ -34,14 +34,14 @@ public class ImageAnalyzerBuffer implements ImageAnalysis.Analyzer{
         long maxSize = availableMemory/27028; //TODO: Change to a frame size or something
         maxSize = (long) (maxSize/1.25);
         this.mContext=mContext;
-        buffer = new CircularBitmapArray(1000000);//(int)maxSize);
+        buffer = new CircularBitmapArray(9000);//(int)maxSize);
     }
 
     @Override
     public void analyze(ImageProxy image, int rotationDegrees) {
-        if(isLowMemory()){
-            buffer.resize();
-        }
+        try{
+        memoryInfo = getAvailableMemory();
+        //System.out.println(memoryInfo.availMem);
         ImageProxy.PlaneProxy[] planes = image.getPlanes();
 
         ByteBuffer yBuffer = planes[0].getBuffer();
@@ -54,6 +54,7 @@ public class ImageAnalyzerBuffer implements ImageAnalysis.Analyzer{
 
         byte[] nv21 = new byte[ySize+uSize+vSize];
 
+
         yBuffer.get(nv21,0,ySize);
         vBuffer.get(nv21,ySize,vSize);
         uBuffer.get(nv21,ySize+vSize,uSize);
@@ -63,9 +64,12 @@ public class ImageAnalyzerBuffer implements ImageAnalysis.Analyzer{
         yuv.compressToJpeg(new Rect(0,0,yuv.getWidth(),yuv.getHeight()), 50, out);
 
         byte[] imageBytes = out.toByteArray();
-        /*
-        Bitmap bitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);*/
+        /*Bitmap bitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);*/
         buffer.addBitmap(imageBytes);
+        }
+        catch (OutOfMemoryError e){
+            buffer.resize();
+        }
     }
 
     private ActivityManager.MemoryInfo getAvailableMemory() {

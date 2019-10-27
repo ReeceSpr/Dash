@@ -84,4 +84,7 @@ public class CircularBitmapArray {
         maxSize = index;
         index = 0;
     }
+    public void toVideo(){
+
+    }
 }
