@@ -45,7 +45,7 @@ https://github.com/thunderedge/CameraX
  */
 public class CameraActivity extends AppCompatActivity {
     private int REQUEST_CODE_PERMISSIONS = 10; //arbitrary number, can be changed accordingly
-    private final String[] REQUIRED_PERMISSIONS = new String[]{"android.permission.CAMERA"};//,"android.permission.WRITE_EXTERNAL_STORAGE"}; //array w/ permissions from manifest
+    private final String[] REQUIRED_PERMISSIONS = new String[]{"android.permission.CAMERA", "android.permission.WRITE_EXTERNAL_STORAGE"};//,"android.permission.WRITE_EXTERNAL_STORAGE"}; //array w/ permissions from manifest
     TextureView txView;
 
 

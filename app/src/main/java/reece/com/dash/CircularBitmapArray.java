@@ -16,6 +16,11 @@ import android.graphics.Rect;
 import android.graphics.YuvImage;
 import android.media.Image;
 
+import org.jcodec.api.android.AndroidSequenceEncoder;
+import org.jcodec.common.io.NIOUtils;
+import org.jcodec.common.io.SeekableByteChannel;
+import org.jcodec.common.model.Rational;
+
 import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
 
@@ -45,6 +50,7 @@ public class CircularBitmapArray {
             } else {
                 byte[] b = (array[0]);
                 Bitmap x = convertToBitmapFromJpeg(b);
+                toVideo();
         }
             index=0;
             array[index] = bitmap;
@@ -86,10 +92,20 @@ public class CircularBitmapArray {
         index = 0;
     }
 
-    public void toVideo(){
-        //For loop to convert array if you have to.
-        //Convert to video
-        //Write to file.
-        NIOUtils.writableFileChannel("/tmp/output.mp4");
+    public void toVideo() {
+        SeekableByteChannel out = null;
+        try {
+            out = NIOUtils.writableFileChannel("/tmp/test.mp4");
+            AndroidSequenceEncoder encoder = new AndroidSequenceEncoder(out, Rational.R(25, maxSize));
+            for (int i = 0; i < maxSize; i++) {
+                Bitmap image = convertToBitmapFromJpeg(this.array[i]);
+                encoder.encodeImage(image);
+            }
+            encoder.finish();
+        } catch (java.io.IOException e) {
+            System.out.println(e);
+        } finally {
+            NIOUtils.closeQuietly(out);
+        }
     }
 }

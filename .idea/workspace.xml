@@ -194,7 +194,15 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="ExecutionTargetManager" SELECTED_TARGET="2768a78c000d7ece" />
+=======
+<<<<<<< Updated upstream
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28_x86" />
+=======
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -207,6 +215,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="408">
               <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="44" />
             </state>
@@ -221,12 +230,48 @@
               <folding>
                 <element signature="method#onCreate#0;class#MainActivity#0" />
                 <element signature="method#changeFragment#0;class#MainActivity#0" />
+=======
+<<<<<<< Updated upstream
+            <state relative-caret-position="1740">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+=======
+            <state relative-caret-position="278">
+              <caret line="259" column="21" lean-forward="true" selection-start-line="259" selection-start-column="21" selection-end-line="259" selection-end-column="21" />
+              <folding>
+                <element signature="docComment;class#CameraActivity#0" />
+                <element signature="docComment;field#AUTO_HIDE#0;class#CameraActivity#0" />
+                <element signature="docComment;field#AUTO_HIDE_DELAY_MILLIS#0;class#CameraActivity#0" />
+                <element signature="docComment;field#UI_ANIMATION_DELAY#0;class#CameraActivity#0" />
+                <element signature="e#2570#2617#0" />
+                <element signature="e#3519#3568#1" />
+                <element signature="docComment;field#mDelayHideTouchListener#0;class#CameraActivity#0" />
+                <element signature="e#4237#4305#1" />
+                <element signature="method#onCreate#0;class#CameraActivity#0" />
+                <element signature="e#5038#5130#1" />
+                <element signature="e#5135#5247#1" />
+                <element signature="method#onPostCreate#0;class#CameraActivity#0" />
+                <element signature="method#toggle#0;class#CameraActivity#0" />
+                <element signature="method#hide#0;class#CameraActivity#0" />
+                <element signature="method#show#0;class#CameraActivity#0" />
+                <element signature="docComment;method#delayedHide#0;class#CameraActivity#0" />
+                <element signature="method#delayedHide#0;class#CameraActivity#0" />
+                <element signature="method#getCameraPermissions#0;class#CameraActivity#0" />
+                <element signature="method#getCameraPreview#0;class#CameraActivity#0" />
+                <element signature="method#updateTransform#0;class#CameraActivity#0" />
+                <element signature="method#onRequestPermissionsResult#0;class#CameraActivity#0" />
+                <element signature="method#allPermissionsGranted#0;class#CameraActivity#0" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
@@ -239,13 +284,43 @@
               </folding>
             </state>
           </provider>
+=======
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-240">
+              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="103">
               <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+=======
+<<<<<<< Updated upstream
+            <state relative-caret-position="390">
+              <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+=======
+            <state relative-caret-position="428">
+              <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+              <folding>
+                <element signature="method#onCreate#0;class#MainActivity#0" />
+                <element signature="method#changeFragment#0;class#MainActivity#0" />
+              </folding>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
             </state>
           </provider>
           <provider editor-type-id="android-manifest" />
@@ -273,7 +348,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state>
+=======
+<<<<<<< Updated upstream
+            <state relative-caret-position="935">
+              <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+=======
+            <state relative-caret-position="548">
+              <caret line="62" column="82" selection-start-line="62" selection-start-column="82" selection-end-line="62" selection-end-column="82" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
               <folding>
                 <element signature="docComment;class#CameraActivity#0" />
                 <element signature="docComment;field#AUTO_HIDE#0;class#CameraActivity#0" />
@@ -309,9 +394,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding3_fragment.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor" />
+=======
+        <entry file="file://$PROJECT_DIR$/gradle.properties">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+            <state relative-caret-position="340">
+=======
+            <state relative-caret-position="300">
+>>>>>>> Stashed changes
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+            <state relative-caret-position="238">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+=======
+            <state relative-caret-position="210">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+>>>>>>> Stashed changes
+            </state>
+          </provider>
+>>>>>>> Stashed changes
         </entry>
       </file>
     </leaf>
@@ -355,20 +468,27 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="415" />
+    <option name="y" value="336" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< Updated upstream
       <pane id="PackagesPane" />
       <pane id="Scope" />
+<<<<<<< Updated upstream
       <pane id="ProjectPane" />
+=======
+=======
+      <pane id="ProjectPane" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -379,33 +499,49 @@
             <path>
               <item name="Dash" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="Dash" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
               <item name="Dash" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+<<<<<<< Updated upstream
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+=======
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="dash" type="cbb59c9e:AndroidPsiDirectoryNode" />
+>>>>>>> Stashed changes
             </path>
             <path>
               <item name="Dash" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="Dash" type="1abcf292:AndroidViewProjectNode" />
+<<<<<<< Updated upstream
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="Dash" type="1abcf292:AndroidViewProjectNode" />
+=======
+>>>>>>> Stashed changes
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+      <pane id="ProjectPane" />
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -417,7 +553,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-10-23T01:55:04.281Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -577,11 +713,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< Updated upstream
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.5024311" side_tool="true" weight="0.18836713" />
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49756888" visible="true" weight="0.18836713" />
+=======
+    <frame x="415" y="336" width="1680" height="1027" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" sideWeight="0.5024311" side_tool="true" weight="0.18836713" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49756888" visible="true" weight="0.18803419" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="2" sideWeight="0.5008104" side_tool="true" weight="0.18836713" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -590,15 +734,34 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.330076" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" x="-2560" y="0" width="1280" height="700" id="Logcat" order="1" weight="0.3344191" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32899022" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Android Profiler" order="3" sideWeight="0.4994664" weight="0.32790446" />
+=======
+      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" sideWeight="0.4994664" weight="0.32790446" />
+=======
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32834226" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32834226" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" sideWeight="0.4994664" weight="0.32790446" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Debug" order="4" weight="0.32899022" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.32834226" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50053364" side_tool="true" weight="0.32790446" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Version Control" order="8" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Build" order="9" visible="true" weight="0.32790446" />
+=======
+      <window_info anchor="bottom" id="Build" order="9" visible="true" weight="0.32899022" />
+=======
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
+      <window_info anchor="bottom" id="Build" order="9" visible="true" weight="0.32834226" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -608,7 +771,11 @@
       <window_info anchor="right" id="Flutter Outline" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Preview" order="7" />
+<<<<<<< Updated upstream
       <window_info anchor="right" id="Assistant" order="8" weight="0.32977587" />
+=======
+      <window_info anchor="right" id="Assistant" order="8" weight="0.32967034" />
+>>>>>>> Stashed changes
     </layout>
   </component>
   <component name="XDebuggerManager">
@@ -676,6 +843,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.camera/camera-core/1.0.0-alpha04/9cbba37c56e2d76ce61a8dbf969c0de61a7db0c1/camera-core-1.0.0-alpha04-sources.jar!/androidx/camera/core/AndroidImageProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -706,6 +874,31 @@
           <caret line="40" column="107" selection-start-line="40" selection-start-column="107" selection-end-line="40" selection-end-column="107" />
         </state>
       </provider>
+=======
+    <entry file="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/androidx.camera/camera-core/1.0.0-alpha04/9cbba37c56e2d76ce61a8dbf969c0de61a7db0c1/camera-core-1.0.0-alpha04-sources.jar!/androidx/camera/core/AndroidImageProxy.java" />
+    <entry file="jar://$PROJECT_DIR$/../AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/os/Looper.class" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/MainViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/androidx.camera/camera-core/1.0.0-alpha04/9cbba37c56e2d76ce61a8dbf969c0de61a7db0c1/camera-core-1.0.0-alpha04-sources.jar!/androidx/camera/core/ImageAnalysisNonBlockingCallback.java" />
+    <entry file="jar://$PROJECT_DIR$/../AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/os/Handler.class" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding1_fragment.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/graphics/BitmapFactory.class" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding2_fragment.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+>>>>>>> Stashed changes
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/onBoarding1_fragment.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -765,6 +958,7 @@
           <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
         </state>
       </provider>
+<<<<<<< Updated upstream
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml">
       <provider selected="true" editor-type-id="android-designer2" />
@@ -803,7 +997,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state>
+=======
+        <state relative-caret-position="2958">
+          <caret line="326" column="16" selection-start-line="326" selection-start-column="16" selection-end-line="326" selection-end-column="16" />
+=======
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+          <folding>
+            <element signature="method#onCreate#0;class#MainActivity#0" />
+            <element signature="method#changeFragment#0;class#MainActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="62" column="82" selection-start-line="62" selection-start-column="82" selection-end-line="62" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="259" column="21" lean-forward="true" selection-start-line="259" selection-start-column="21" selection-end-line="259" selection-end-column="21" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
           <folding>
             <element signature="docComment;class#CameraActivity#0" />
             <element signature="docComment;field#AUTO_HIDE#0;class#CameraActivity#0" />
@@ -820,6 +1089,7 @@
             <element signature="method#getCameraPermissions#0;class#CameraActivity#0" />
             <element signature="method#getCameraPreview#0;class#CameraActivity#0" />
             <element signature="method#updateTransform#0;class#CameraActivity#0" />
+<<<<<<< Updated upstream
             <element signature="method#allPermissionsGranted#0;class#CameraActivity#0" />
           </folding>
         </state>
@@ -832,14 +1102,24 @@
           <folding>
             <element signature="method#onCreate#0;class#MainActivity#0" />
             <element signature="method#changeFragment#0;class#MainActivity#0" />
+=======
+            <element signature="method#onRequestPermissionsResult#0;class#CameraActivity#0" />
+            <element signature="method#allPermissionsGranted#0;class#CameraActivity#0" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="458">
           <caret line="92" selection-start-line="92" selection-end-line="92" />
+=======
+<<<<<<< Updated upstream
+        <state relative-caret-position="935">
+          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#addBitmap#0;class#CircularBitmapArray#0" />
@@ -858,8 +1138,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="408">
           <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="44" />
+=======
+        <state relative-caret-position="390">
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+=======
+        <state relative-caret-position="-240">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+>>>>>>> Stashed changes
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
