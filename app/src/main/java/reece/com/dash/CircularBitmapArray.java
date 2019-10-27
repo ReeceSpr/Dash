@@ -9,6 +9,7 @@ IF INDEX == MAXSIZE then move INDEX to 0 can replace element at INDEX.
 - MAXSIZE set in constructor.
  */
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.ImageFormat;
@@ -22,17 +23,27 @@ import org.jcodec.common.io.SeekableByteChannel;
 import org.jcodec.common.model.Rational;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.Reader;
 import java.nio.ByteBuffer;
 
 public class CircularBitmapArray {
     private  byte[][] array;
     private int index;
     private int maxSize;
+    private Context mContext;
 
-    public CircularBitmapArray(int maxSize){
+    public CircularBitmapArray(int maxSize, Context context){
         array = new  byte[maxSize][];
         index = 0;
         this.maxSize = maxSize;
+        this.mContext = context;
     }
 
     public void addBitmap( byte[] bitmap){
@@ -95,17 +106,37 @@ public class CircularBitmapArray {
     public void toVideo() {
         SeekableByteChannel out = null;
         try {
+            // DEBUGING
+            File file = new File(mContext.getFilesDir(), "test.txt");
+            file.createNewFile();
+            FileOutputStream fOut = new FileOutputStream(file);
+            OutputStreamWriter myOutWriter = new OutputStreamWriter(fOut);
+            myOutWriter.append("TESTDATA");
+
+            myOutWriter.close();
+
+            fOut.flush();
+            fOut.close();
+
+
+            File directory = mContext.getFilesDir();
+            file = new File(directory, "test.txt");
+            file.createNewFile();
+            FileInputStream fIn = new FileInputStream(file);
+
+
+            /*DEBUGGING ENDED
             out = NIOUtils.writableFileChannel("/tmp/test.mp4");
             AndroidSequenceEncoder encoder = new AndroidSequenceEncoder(out, Rational.R(25, maxSize));
             for (int i = 0; i < maxSize; i++) {
                 Bitmap image = convertToBitmapFromJpeg(this.array[i]);
                 encoder.encodeImage(image);
             }
-            encoder.finish();
+            encoder.finish();*/
         } catch (java.io.IOException e) {
             System.out.println(e);
         } finally {
-            NIOUtils.closeQuietly(out);
+            //NIOUtils.closeQuietly(out);
         }
     }
 }

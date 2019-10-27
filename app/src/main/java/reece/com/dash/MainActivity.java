@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.main_activity);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, onBoarding1_fragment.newInstance())
+                    .replace(R.id.container, onBoarding3_fragment.newInstance())
                     .commitNow();
         }
     }
@@ -51,11 +51,11 @@ public class MainActivity extends AppCompatActivity {
     TODO: We want to change this to be a gesture listener.
     On activity touched.
      */
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        changeFragment('R');
-        return super.onTouchEvent(event);
-    }
+    //@Override
+    //public boolean onTouchEvent(MotionEvent event) {
+    //    changeFragment('R');
+    //    return super.onTouchEvent(event);
+    //}
 
     /*
     Changes the fragment inside the activity.
