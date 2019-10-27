@@ -15,6 +15,9 @@ import android.graphics.ImageFormat;
 import android.graphics.Rect;
 import android.graphics.YuvImage;
 import android.media.Image;
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
 
 import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
@@ -86,10 +89,11 @@ public class CircularBitmapArray {
         index = 0;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public void toVideo(){
         //For loop to convert array if you have to.
         //Convert to video
         //Write to file.
-        NIOUtils.writableFileChannel("/tmp/output.mp4");
+
     }
 }

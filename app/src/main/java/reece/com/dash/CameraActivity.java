@@ -145,6 +145,7 @@ public class CameraActivity extends AppCompatActivity {
             startCamera(); //start camera if permission has been granted by user
         } else{
             ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);
+            ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);
         }
     }
 
@@ -205,13 +206,6 @@ public class CameraActivity extends AppCompatActivity {
     Gets the permissons of the user
     TODO: We should move this to on boarding at some point.
      */
-    void getCameraPermissions() {
-
-
-    }
-
-    void getCameraPreview() {
-    }
 
     private void startCamera() {
         //make sure there isn't another camera instance running before starting

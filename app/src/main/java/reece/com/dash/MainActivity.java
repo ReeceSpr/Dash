@@ -1,10 +1,13 @@
 package reece.com.dash;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.MotionEvent;
+import android.widget.FrameLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
+
+import reece.com.dash.ui.main.OnSwipeTouchListener;
 import reece.com.dash.ui.main.onBoarding1_fragment;
 import reece.com.dash.ui.main.onBoarding2_fragment;
 import reece.com.dash.ui.main.onBoarding3_fragment;
@@ -45,53 +48,82 @@ public class MainActivity extends AppCompatActivity {
                     .replace(R.id.container, onBoarding1_fragment.newInstance())
                     .commitNow();
         }
+        FrameLayout cont = findViewById(R.id.container);
+        cont.setOnTouchListener(new OnSwipeTouchListener(this){
+            @Override
+            public void onSwipeLeft() {
+                changeFragment('R');
+            }
+
+            @Override
+            public void onSwipeUp() {
+                if(currentFragmentFeature == 2){
+                    Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+                    startActivity(intent);
+                }
+            }
+
+            @Override
+            public void onSwipeRight() {
+                changeFragment('L');
+
+            }
+        });
+
+
     }
 
-    /*
-    TODO: We want to change this to be a gesture listener.
-    On activity touched.
-     */
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        changeFragment('R');
-        return super.onTouchEvent(event);
-    }
 
     /*
     Changes the fragment inside the activity.
      */
     public void changeFragment(char direction){
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        //transaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left);
         switch (direction){
             case 'L':
                 currentFragmentFeature = currentFragmentFeature - 1;
+                transaction.setCustomAnimations(R.anim.enter_from_left, R.anim.exit_to_right);
                 if(currentFragmentFeature<0){
                     currentFragmentFeature = 0;
+                    return;
                 }
                 break;
             case 'R':
                 currentFragmentFeature = currentFragmentFeature + 1;
+
+                transaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left);
                 if(currentFragmentFeature>2){
                     currentFragmentFeature = 2;
+                    return;
                 }
                 break;
         }
+
+
         switch (currentFragmentFeature){
             case 0:
-                getSupportFragmentManager().beginTransaction()
+                transaction.replace(R.id.container,  onBoarding1_fragment.newInstance());
+                /*getSupportFragmentManager().beginTransaction()
                         .replace(R.id.container, onBoarding1_fragment.newInstance())
-                        .commitNow();
+                        .commitNow();*/
                 break;
             case 1:
-                getSupportFragmentManager().beginTransaction()
+                transaction.replace(R.id.container,  onBoarding2_fragment.newInstance());
+                /*getSupportFragmentManager().beginTransaction()
                         .replace(R.id.container, onBoarding2_fragment.newInstance())
-                        .commitNow();
+                        .commitNow();*/
                 break;
             case 2:
-                getSupportFragmentManager().beginTransaction()
+                transaction.replace(R.id.container,  onBoarding3_fragment.newInstance());
+                /*getSupportFragmentManager().beginTransaction()
                         .replace(R.id.container, onBoarding3_fragment.newInstance())
-                        .commitNow();
+                        .commitNow();*/
                 break;
         }
-
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
+
+
 }

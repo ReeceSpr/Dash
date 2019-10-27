@@ -11,13 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f10a15b9-f2a3-4cb2-a492-69ea0feba4c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/Onboarding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_onboarding.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jcodec_jcodec_android_0_2_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/OnSwipeTouchListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/enter_from_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/enter_from_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/exit_to_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/exit_to_right.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
@@ -25,162 +28,17 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_android_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_android_arm_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_android_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_android_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_linux_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_linux_armhf_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_linux_ppc64le_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_linux_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_macosx_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_2_3_1_1_5_1_windows_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_artoolkitplus_platform_2_3_1_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_android_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_android_arm_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_android_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_android_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_linux_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_linux_armhf_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_linux_ppc64le_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_linux_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_macosx_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_4_1_3_1_5_1_windows_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_ffmpeg_platform_4_1_3_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_android_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_android_arm_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_android_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_android_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_linux_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_linux_armhf_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_linux_ppc64le_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_linux_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_macosx_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_1_07_1_5_1_windows_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flandmark_platform_1_07_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flycapture_2_13_3_31_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flycapture_2_13_3_31_1_5_1_linux_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flycapture_2_13_3_31_1_5_1_linux_armhf_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flycapture_2_13_3_31_1_5_1_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flycapture_2_13_3_31_1_5_1_linux_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flycapture_2_13_3_31_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flycapture_2_13_3_31_1_5_1_windows_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_flycapture_platform_2_13_3_31_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_javacpp_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_javacv_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_javacv_platform_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_android_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_android_arm_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_android_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_android_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_linux_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_linux_armhf_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_linux_ppc64le_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_linux_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_macosx_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_1_78_0_1_5_1_windows_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_leptonica_platform_1_78_0_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libdc1394_2_2_6_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libdc1394_2_2_6_1_5_1_linux_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libdc1394_2_2_6_1_5_1_linux_armhf_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libdc1394_2_2_6_1_5_1_linux_ppc64le_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libdc1394_2_2_6_1_5_1_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libdc1394_2_2_6_1_5_1_linux_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libdc1394_2_2_6_1_5_1_macosx_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libdc1394_2_2_6_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libdc1394_2_2_6_1_5_1_windows_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libdc1394_platform_2_2_6_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect2_0_2_0_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect2_0_2_0_1_5_1_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect2_0_2_0_1_5_1_linux_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect2_0_2_0_1_5_1_macosx_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect2_0_2_0_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect2_platform_0_2_0_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect_0_5_7_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect_0_5_7_1_5_1_linux_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect_0_5_7_1_5_1_linux_armhf_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect_0_5_7_1_5_1_linux_ppc64le_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect_0_5_7_1_5_1_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect_0_5_7_1_5_1_linux_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect_0_5_7_1_5_1_macosx_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect_0_5_7_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect_0_5_7_1_5_1_windows_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_libfreenect_platform_0_5_7_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_librealsense_1_12_1_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_librealsense_1_12_1_1_5_1_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_librealsense_1_12_1_1_5_1_linux_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_librealsense_1_12_1_1_5_1_macosx_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_librealsense_1_12_1_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_librealsense_1_12_1_1_5_1_windows_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_librealsense_platform_1_12_1_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_android_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_android_arm_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_android_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_android_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_ios_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_ios_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_linux_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_linux_armhf_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_linux_ppc64le_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_linux_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_macosx_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_0_3_6_1_5_1_windows_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_openblas_platform_0_3_6_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_android_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_android_arm_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_android_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_android_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_ios_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_ios_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_linux_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_linux_armhf_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_linux_ppc64le_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_linux_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_macosx_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_4_1_0_1_5_1_windows_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_opencv_platform_4_1_0_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_android_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_android_arm_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_android_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_android_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_linux_arm64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_linux_armhf_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_linux_ppc64le_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_linux_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_linux_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_macosx_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_4_1_0_1_5_1_windows_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_tesseract_platform_4_1_0_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_videoinput_0_200_1_5_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_videoinput_0_200_1_5_1_windows_x86_64_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_videoinput_0_200_1_5_1_windows_x86_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bytedeco_videoinput_platform_0_200_1_5_1_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/Onboarding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/onBoarding3_fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/onBoarding3_fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_onboarding.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/onboarding3_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/onboarding3_fragment.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -205,22 +63,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="44" />
+            <state relative-caret-position="507">
+              <caret line="97" column="27" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
+              <folding>
+                <element signature="e#768#801#0" />
+                <element signature="e#1005#1190#1" />
+                <element signature="class#1481:2191" />
+                <element signature="e#1569#1570#0" expanded="true" />
+                <element signature="e#1620#1621#0" expanded="true" />
+                <element signature="e#1446#1502#0" />
+                <element signature="e#2257#3057#0" />
+                <element signature="e#2437#2610#0" />
+                <element signature="e#2656#2829#0" />
+                <element signature="e#2889#3062#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/MainActivity.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/onBoarding3_fragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+            <state relative-caret-position="350">
+              <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
               <folding>
-                <element signature="method#onCreate#0;class#MainActivity#0" />
-                <element signature="method#changeFragment#0;class#MainActivity#0" />
+                <element signature="e#587#588#0" expanded="true" />
+                <element signature="e#636#637#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -229,13 +99,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="382">
+              <caret line="49" column="54" lean-forward="true" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#addBitmap#0;class#CircularBitmapArray#0" />
-                <element signature="method#convertToBitmapFromImage#0;class#CircularBitmapArray#0" />
                 <element signature="method#resize#0;class#CircularBitmapArray#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/OnSwipeTouchListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-167">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -244,7 +126,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
+            <state relative-caret-position="238">
               <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
             </state>
           </provider>
@@ -252,28 +134,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/MainViewModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_onboarding.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml">
+          <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="180">
+              <caret line="46" column="35" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="35" />
               <folding>
                 <element signature="docComment;class#CameraActivity#0" />
                 <element signature="docComment;field#AUTO_HIDE#0;class#CameraActivity#0" />
@@ -287,8 +166,6 @@
                 <element signature="method#show#0;class#CameraActivity#0" />
                 <element signature="docComment;method#delayedHide#0;class#CameraActivity#0" />
                 <element signature="method#delayedHide#0;class#CameraActivity#0" />
-                <element signature="method#getCameraPermissions#0;class#CameraActivity#0" />
-                <element signature="method#getCameraPreview#0;class#CameraActivity#0" />
                 <element signature="method#updateTransform#0;class#CameraActivity#0" />
                 <element signature="method#allPermissionsGranted#0;class#CameraActivity#0" />
               </folding>
@@ -297,21 +174,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding1_fragment.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding2_fragment.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding3_fragment.xml">
           <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="-304" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1013">
+              <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -319,6 +198,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="layoutResourceFile_vertical" />
+        <option value="valueResourceFile" />
+        <option value="resourceFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -330,6 +213,9 @@
       <find>imageButtonGallery</find>
       <find>Frick</find>
       <find>throw</find>
+      <find>permissions</find>
+      <find>request</find>
+      <find>permis</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -338,20 +224,34 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/onboarding3_fragment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/camera_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/ImageCircularBuffer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/ImageAnalyzerBuffer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/CircularArrayBuffer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularArrayBuffer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_onboarding.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/Onboarding.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/onboarding/onboarding_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/onboarding_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/Onboard.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/anim.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/anim/enter_from_left.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/anim/enter_from_right.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/anim/exit_to_left.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/anim/exit_to_right.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/JCodec/AWTSequenceEncoder.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/MainViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/ViewController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/OnSwipeTouchListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/onBoarding3_fragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/onboarding3_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/reece/com/dash/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -366,9 +266,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -390,6 +288,18 @@
             <path>
               <item name="Dash" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="dash" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java (generated)" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Dash" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -401,6 +311,70 @@
             <path>
               <item name="Dash" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Dash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dash" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dash" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dash" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dash" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dash" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dash" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dash" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dash" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dash" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -431,6 +405,9 @@
     </key>
     <key name="android.template.parentActivityClass">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Reece\Documents\dash\app\src\main\res\layout" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -599,8 +576,8 @@
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Build" order="9" visible="true" weight="0.32790446" />
-      <window_info anchor="bottom" id="Find" order="10" />
-      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.32899022" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.32977587" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -669,13 +646,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/onBoarding3_fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.camera/camera-core/1.0.0-alpha04/9cbba37c56e2d76ce61a8dbf969c0de61a7db0c1/camera-core-1.0.0-alpha04-sources.jar!/androidx/camera/core/AndroidImageProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -707,33 +677,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/onBoarding1_fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#542#551#0" />
-            <element signature="method#onCreateView#0;class#onBoarding1_fragment#0" />
-            <element signature="method#onActivityCreated#0;class#onBoarding1_fragment#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
@@ -748,13 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/MainViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/r/reece/com/dash/R.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -766,44 +707,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/Onboarding.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding_layout.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_onboarding.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/Onboard.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/anim.xml" />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/exit_to_left.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/exit_to_right.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/enter_from_left.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/enter_from_right.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/JCodec/AWTSequenceEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_onboard.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/Onboarding.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding1_fragment.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding2_fragment.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding3_fragment.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/onBoarding2_fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/onBoarding1_fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#542#551#0" />
+            <element signature="method#onCreateView#0;class#onBoarding1_fragment#0" />
+            <element signature="method#onActivityCreated#0;class#onBoarding1_fragment#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/ViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="49" column="54" lean-forward="true" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#resize#0;class#CircularBitmapArray#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
+        <state relative-caret-position="238">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
       <provider editor-type-id="android-manifest" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_onboarding.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ImageAnalyzerBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="1013">
+          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/OnSwipeTouchListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-167">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/MainViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CameraActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="180">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="35" />
           <folding>
             <element signature="docComment;class#CameraActivity#0" />
             <element signature="docComment;field#AUTO_HIDE#0;class#CameraActivity#0" />
@@ -817,49 +871,45 @@
             <element signature="method#show#0;class#CameraActivity#0" />
             <element signature="docComment;method#delayedHide#0;class#CameraActivity#0" />
             <element signature="method#delayedHide#0;class#CameraActivity#0" />
-            <element signature="method#getCameraPermissions#0;class#CameraActivity#0" />
-            <element signature="method#getCameraPreview#0;class#CameraActivity#0" />
             <element signature="method#updateTransform#0;class#CameraActivity#0" />
             <element signature="method#allPermissionsGranted#0;class#CameraActivity#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/ui/main/onBoarding3_fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
+          <folding>
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/onboarding3_fragment.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-304" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+        <state relative-caret-position="507">
+          <caret line="97" column="27" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
           <folding>
-            <element signature="method#onCreate#0;class#MainActivity#0" />
-            <element signature="method#changeFragment#0;class#MainActivity#0" />
+            <element signature="e#768#801#0" />
+            <element signature="e#1005#1190#1" />
+            <element signature="class#1481:2191" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+            <element signature="e#1446#1502#0" />
+            <element signature="e#2257#3057#0" />
+            <element signature="e#2437#2610#0" />
+            <element signature="e#2656#2829#0" />
+            <element signature="e#2889#3062#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/reece/com/dash/CircularBitmapArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addBitmap#0;class#CircularBitmapArray#0" />
-            <element signature="method#convertToBitmapFromImage#0;class#CircularBitmapArray#0" />
-            <element signature="method#resize#0;class#CircularBitmapArray#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="44" />
         </state>
       </provider>
     </entry>
