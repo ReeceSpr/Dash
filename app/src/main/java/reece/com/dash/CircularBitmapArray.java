@@ -80,11 +80,16 @@ public class CircularBitmapArray {
         Bitmap bitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
         return bitmap;
     }
+
     public void resize(){
         maxSize = index;
         index = 0;
     }
-    public void toVideo(){
 
+    public void toVideo(){
+        //For loop to convert array if you have to.
+        //Convert to video
+        //Write to file.
+        NIOUtils.writableFileChannel("/tmp/output.mp4");
     }
 }
