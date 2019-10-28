@@ -48,8 +48,8 @@
 
         <TextureView
             android:id="@+id/textureView_Camera"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -60,17 +60,17 @@
             android:id="@+id/textViewTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@android:color/black"
             android:fontFamily="monospace"
+            android:gravity="center"
             android:text="Double Tap Above To Save Last 30s.\nWhen the icon below changes last 30s have been saved."
             android:textColor="@color/colorAccent"
-            android:textSize="24dp"
+            android:textSize="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textureView_Camera"
-            app:layout_constraintVertical_bias="0.07999998"
-            android:gravity="center"
-            />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.75" />
 
         <ImageButton
             android:id="@+id/imageButtonGallery"
@@ -82,7 +82,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewTime"
-            app:layout_constraintVertical_bias="0.17000002" />
+            app:layout_constraintVertical_bias="0.32999998" />
 
         <ImageButton
             android:id="@+id/imageButton_capture"
