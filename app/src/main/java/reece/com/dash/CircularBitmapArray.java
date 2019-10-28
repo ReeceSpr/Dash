@@ -17,7 +17,8 @@ import android.graphics.ImageFormat;
 import android.graphics.Rect;
 import android.graphics.YuvImage;
 import android.media.Image;
-import android.net.Uri;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import org.jcodec.api.android.AndroidSequenceEncoder;
 import org.jcodec.common.io.NIOUtils;
@@ -26,28 +27,22 @@ import org.jcodec.common.model.Rational;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.Reader;
 import java.nio.ByteBuffer;
-
-import static android.content.Intent.ACTION_VIEW;
 
 public class CircularBitmapArray {
     private  byte[][] array;
     private int index;
     private int maxSize;
     private Context mContext;
+    private ImageButton mImageButton;
 
-    public CircularBitmapArray(int maxSize, Context context){
+    public CircularBitmapArray(int maxSize, Context context, ImageButton imageButton){
         array = new  byte[maxSize][];
         index = 0;
         this.maxSize = maxSize;
         this.mContext = context;
+        this.mImageButton = imageButton;
     }
 
     public void addBitmap( byte[] bitmap){
@@ -59,13 +54,12 @@ public class CircularBitmapArray {
             array[index] = bitmap;
             index++;
         } else if(index == maxSize){
+            System.out.println("MAXSIZE");
             index=0;
             if(array[index]==null){
-                System.out.println("Garbage Collection");
+
             } else {
-                byte[] b = (array[0]);
-                Bitmap x = convertToBitmapFromJpeg(b);
-                toVideo();
+                //toVideo();
         }
             index=0;
             array[index] = bitmap;
@@ -108,28 +102,23 @@ public class CircularBitmapArray {
     }
 
     public void toVideo() {
-        SeekableByteChannel out = null;
-        String path = "";
+        String pathOG = mContext.getFilesDir() + "/output-";
+       String path = mContext.getFilesDir() + "/output-1";
+       String ext = ".mp4";
+       int i=1;
+       File file = new File(path+ext);
         try {
-            // DEBUGING
-            File file = new File(mContext.getFilesDir(), "output.mp4");
-            file.createNewFile();
-            path = file.getPath();
-
-            //DEBUGGING ENDED
-            out = NIOUtils.writableFileChannel(path);
-            AndroidSequenceEncoder encoder = new AndroidSequenceEncoder(out, Rational.R(25, 1));
-            for (int i = 0; i < maxSize; i++) {
-                System.out.println(i);
-                encoder.encodeImage( convertToBitmapFromJpeg(this.array[i]));
+            while (!file.createNewFile()){
+                path = pathOG + i;
+                i++;
+                file = new File(path+ext);
             }
-            encoder.finish();
-        } catch (java.io.IOException e) {
-            System.out.println(e);
-        } finally {
-            NIOUtils.closeQuietly(out);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        Intent intent = new Intent(mContext, Replay.class);
-        mContext.startActivity(intent);
+
+        EncodeASyncTask encorder = new EncodeASyncTask(mImageButton,array,file,mContext,index,maxSize);
+       encorder.execute();
     }
+
 }
