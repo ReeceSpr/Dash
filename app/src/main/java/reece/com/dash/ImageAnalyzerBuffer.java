@@ -34,7 +34,7 @@ public class ImageAnalyzerBuffer implements ImageAnalysis.Analyzer{
         long maxSize = availableMemory/27028; //TODO: Change to a frame size or something
         maxSize = (long) (maxSize/1.25);
         this.mContext=mContext;
-        buffer = new CircularBitmapArray(9000);//(int)maxSize);
+        buffer = new CircularBitmapArray(50, mContext);//(int)maxSize);
     }
 
     @Override
