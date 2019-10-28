@@ -10,12 +10,14 @@ IF INDEX == MAXSIZE then move INDEX to 0 can replace element at INDEX.
  */
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.ImageFormat;
 import android.graphics.Rect;
 import android.graphics.YuvImage;
 import android.media.Image;
+import android.net.Uri;
 
 import org.jcodec.api.android.AndroidSequenceEncoder;
 import org.jcodec.common.io.NIOUtils;
@@ -32,6 +34,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Reader;
 import java.nio.ByteBuffer;
+
+import static android.content.Intent.ACTION_VIEW;
 
 public class CircularBitmapArray {
     private  byte[][] array;
@@ -105,38 +109,27 @@ public class CircularBitmapArray {
 
     public void toVideo() {
         SeekableByteChannel out = null;
+        String path = "";
         try {
             // DEBUGING
-            File file = new File(mContext.getFilesDir(), "test.txt");
+            File file = new File(mContext.getFilesDir(), "output.mp4");
             file.createNewFile();
-            FileOutputStream fOut = new FileOutputStream(file);
-            OutputStreamWriter myOutWriter = new OutputStreamWriter(fOut);
-            myOutWriter.append("TESTDATA");
+            path = file.getPath();
 
-            myOutWriter.close();
-
-            fOut.flush();
-            fOut.close();
-
-
-            File directory = mContext.getFilesDir();
-            file = new File(directory, "test.txt");
-            file.createNewFile();
-            FileInputStream fIn = new FileInputStream(file);
-
-
-            /*DEBUGGING ENDED
-            out = NIOUtils.writableFileChannel("/tmp/test.mp4");
-            AndroidSequenceEncoder encoder = new AndroidSequenceEncoder(out, Rational.R(25, maxSize));
+            //DEBUGGING ENDED
+            out = NIOUtils.writableFileChannel(path);
+            AndroidSequenceEncoder encoder = new AndroidSequenceEncoder(out, Rational.R(25, 1));
             for (int i = 0; i < maxSize; i++) {
-                Bitmap image = convertToBitmapFromJpeg(this.array[i]);
-                encoder.encodeImage(image);
+                System.out.println(i);
+                encoder.encodeImage( convertToBitmapFromJpeg(this.array[i]));
             }
-            encoder.finish();*/
+            encoder.finish();
         } catch (java.io.IOException e) {
             System.out.println(e);
         } finally {
-            //NIOUtils.closeQuietly(out);
+            NIOUtils.closeQuietly(out);
         }
+        Intent intent = new Intent(mContext, Replay.class);
+        mContext.startActivity(intent);
     }
 }
