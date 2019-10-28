@@ -9,28 +9,33 @@ IF INDEX == MAXSIZE then move INDEX to 0 can replace element at INDEX.
 - MAXSIZE set in constructor.
  */
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.ImageFormat;
 import android.graphics.Rect;
 import android.graphics.YuvImage;
 import android.media.Image;
-import android.os.Build;
-
-import androidx.annotation.RequiresApi;
+import android.widget.ImageButton;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
 import java.nio.ByteBuffer;
 
 public class CircularBitmapArray {
     private  byte[][] array;
     private int index;
     private int maxSize;
+    private Context mContext;
+    private ImageButton mImageButton;
 
-    public CircularBitmapArray(int maxSize){
+    public CircularBitmapArray(int maxSize, Context context, ImageButton imageButton){
         array = new  byte[maxSize][];
         index = 0;
         this.maxSize = maxSize;
+        this.mContext = context;
+        this.mImageButton = imageButton;
     }
 
     public void addBitmap( byte[] bitmap){
@@ -42,12 +47,12 @@ public class CircularBitmapArray {
             array[index] = bitmap;
             index++;
         } else if(index == maxSize){
+            System.out.println("MAXSIZE");
             index=0;
             if(array[index]==null){
-                System.out.println("Garbage Collection");
+
             } else {
-                byte[] b = (array[0]);
-                Bitmap x = convertToBitmapFromJpeg(b);
+                //toVideo();
         }
             index=0;
             array[index] = bitmap;
@@ -89,11 +94,26 @@ public class CircularBitmapArray {
         index = 0;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
-    public void toVideo(){
         //For loop to convert array if you have to.
         //Convert to video
         //Write to file.
+    public void toVideo() {
+        String pathOG = mContext.getFilesDir() + "/output-";
+       String path = mContext.getFilesDir() + "/output-1";
+       String ext = ".mp4";
+       int i=1;
+       File file = new File(path+ext);
+        try {
+            while (!file.createNewFile()){
+                path = pathOG + i;
+                i++;
+                file = new File(path+ext);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
+        EncodeASyncTask encorder = new EncodeASyncTask(mImageButton,array,file,mContext,index,maxSize);
+       encorder.execute();
     }
 }

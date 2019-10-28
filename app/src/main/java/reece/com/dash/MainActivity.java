@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.main_activity);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, onBoarding1_fragment.newInstance())
+                    .replace(R.id.container, onBoarding3_fragment.newInstance())
                     .commitNow();
         }
         FrameLayout cont = findViewById(R.id.container);
-        cont.setOnTouchListener(new OnSwipeTouchListener(this){
+        cont.setOnTouchListener(new OnSwipeTouchListener(this) {
             @Override
             public void onSwipeLeft() {
                 changeFragment('R');
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSwipeUp() {
-                if(currentFragmentFeature == 2){
+                if (currentFragmentFeature == 2) {
                     Intent intent = new Intent(MainActivity.this, CameraActivity.class);
                     startActivity(intent);
                 }
@@ -69,10 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
     }
-
 
     /*
     Changes the fragment inside the activity.

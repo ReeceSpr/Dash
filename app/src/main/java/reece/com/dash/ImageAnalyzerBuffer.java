@@ -5,6 +5,8 @@ import android.content.Context;
 import android.graphics.ImageFormat;
 import android.graphics.Rect;
 import android.graphics.YuvImage;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.camera.core.ImageAnalysis;
 import androidx.camera.core.ImageProxy;
@@ -27,21 +29,21 @@ public class ImageAnalyzerBuffer implements ImageAnalysis.Analyzer{
     ActivityManager.MemoryInfo memoryInfo;
     Context mContext;
 
-    public ImageAnalyzerBuffer(Context mContext) {
+    public ImageAnalyzerBuffer(Context mContext, ImageButton imageButton) {
         this.mContext=mContext;
         memoryInfo = getAvailableMemory();
         long availableMemory = memoryInfo.availMem;
         long maxSize = availableMemory/27028; //TODO: Change to a frame size or something
         maxSize = (long) (maxSize/1.25);
         this.mContext=mContext;
-        buffer = new CircularBitmapArray(9000);//(int)maxSize);
+        buffer = new CircularBitmapArray(600, mContext, imageButton);//(int)maxSize);
     }
 
     @Override
     public void analyze(ImageProxy image, int rotationDegrees) {
         try{
         memoryInfo = getAvailableMemory();
-        //System.out.println(memoryInfo.availMem);
+
         ImageProxy.PlaneProxy[] planes = image.getPlanes();
 
         ByteBuffer yBuffer = planes[0].getBuffer();
@@ -88,5 +90,8 @@ public class ImageAnalyzerBuffer implements ImageAnalysis.Analyzer{
             activityManager.getMemoryInfo(memoryInfo);
         }
         return memoryInfo.lowMemory;
+    }
+    public void toVideo(){
+        buffer.toVideo();
     }
 }

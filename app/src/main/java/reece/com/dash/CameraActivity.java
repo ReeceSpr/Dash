@@ -13,6 +13,7 @@ import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -45,9 +46,9 @@ https://github.com/thunderedge/CameraX
  */
 public class CameraActivity extends AppCompatActivity {
     private int REQUEST_CODE_PERMISSIONS = 10; //arbitrary number, can be changed accordingly
-    private final String[] REQUIRED_PERMISSIONS = new String[]{"android.permission.CAMERA"};//,"android.permission.WRITE_EXTERNAL_STORAGE"}; //array w/ permissions from manifest
+    private final String[] REQUIRED_PERMISSIONS = new String[]{"android.permission.CAMERA", "android.permission.WRITE_EXTERNAL_STORAGE"};//,"android.permission.WRITE_EXTERNAL_STORAGE"}; //array w/ permissions from manifest
     TextureView txView;
-
+    ImageAnalyzerBuffer imageAnalyzerBuffer;
 
 /**
  * Whether or not the system UI should be auto-hidden after
@@ -147,6 +148,7 @@ public class CameraActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);
             ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);
         }
+
     }
 
     @Override
@@ -267,9 +269,19 @@ public class CameraActivity extends AppCompatActivity {
 
         /* image analyser */
 
-        ImageAnalysisConfig imgAConfig = new ImageAnalysisConfig.Builder().setTargetResolution(new Size(1920,1080)).setImageReaderMode(ImageAnalysis.ImageReaderMode.ACQUIRE_LATEST_IMAGE).build();
+        ImageAnalysisConfig imgAConfig = new ImageAnalysisConfig.Builder().setImageReaderMode(ImageAnalysis.ImageReaderMode.ACQUIRE_LATEST_IMAGE).build();
         ImageAnalysis analysis = new ImageAnalysis(imgAConfig);
-        analysis.setAnalyzer( new ImageAnalyzerBuffer(this));
+        ImageButton imgButton = findViewById(R.id.imageButtonGallery);
+        analysis.setAnalyzer( new ImageAnalyzerBuffer(this, imgButton));
+        final ImageAnalyzerBuffer buffer =(ImageAnalyzerBuffer) analysis.getAnalyzer();
+        //Touch listener
+        txView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                buffer.toVideo();
+            }
+        });
+
         //bind to lifecycle:
         CameraX.bindToLifecycle((LifecycleOwner)this, analysis, imgCap, preview);
     }
