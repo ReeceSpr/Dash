@@ -57,53 +57,43 @@
             app:layout_constraintVertical_bias="0.13" />
 
         <TextView
-            android:id="@+id/textViewRecordTime"
+            android:id="@+id/textViewTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
-            android:text="Recrod Time: 00:00"
+            android:text="Double Tap Above To Save Last 30s.\nWhen the icon below changes last 30s have been saved."
             android:textColor="@color/colorAccent"
             android:textSize="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textureView_Camera"
-            app:layout_constraintVertical_bias="0.19999999" />
-
-        <TextView
-            android:id="@+id/textViewTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="monospace"
-            android:text="Time: 00:00 AM"
-            android:textColor="@color/colorAccent"
-            android:textSize="24dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewRecordTime"
-            app:layout_constraintVertical_bias="0.19999999" />
+            app:layout_constraintVertical_bias="0.07999998"
+            android:gravity="center"
+            />
 
         <ImageButton
             android:id="@+id/imageButtonGallery"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@color/colorAccent"
             android:src="@android:drawable/ic_menu_gallery"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewTime"
-            app:layout_constraintVertical_bias="0.3" />
+            app:layout_constraintVertical_bias="0.17000002" />
 
         <ImageButton
             android:id="@+id/imageButton_capture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher_round"
+            android:src="@android:drawable/ic_menu_camera"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButtonGallery" />
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonGallery"
+            app:layout_constraintVertical_bias="0.31" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

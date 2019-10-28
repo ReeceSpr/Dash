@@ -98,6 +98,7 @@ public class EncodeASyncTask extends AsyncTask<Void, Void, Bitmap> {
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, Replay.class);
                 intent.putExtra("fpath", file.getAbsolutePath());
+                CameraActivity.thumbPath = file.getAbsolutePath();
                 mContext.startActivity(intent);
             }
         });
