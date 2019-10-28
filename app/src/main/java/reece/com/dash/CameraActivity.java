@@ -1,6 +1,8 @@
 package reece.com.dash;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Matrix;
 import android.os.Bundle;
@@ -49,6 +51,7 @@ public class CameraActivity extends AppCompatActivity {
     private final String[] REQUIRED_PERMISSIONS = new String[]{"android.permission.CAMERA", "android.permission.WRITE_EXTERNAL_STORAGE"};//,"android.permission.WRITE_EXTERNAL_STORAGE"}; //array w/ permissions from manifest
     TextureView txView;
     ImageAnalyzerBuffer imageAnalyzerBuffer;
+    static String thumbPath;
 
 /**
  * Whether or not the system UI should be auto-hidden after
@@ -347,6 +350,17 @@ public class CameraActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putString("Thumb", thumbPath);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        thumbPath = savedInstanceState.getString("Thumb", thumbPath);
+    }
 
 }
 
