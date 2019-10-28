@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
         switch (currentFragmentFeature){
             case 0:
                 transaction.replace(R.id.container,  onBoarding1_fragment.newInstance());
+
                 /*getSupportFragmentManager().beginTransaction()
                         .replace(R.id.container, onBoarding1_fragment.newInstance())
                         .commitNow();*/
