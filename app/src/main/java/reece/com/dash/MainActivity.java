@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.main_activity);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, onBoarding3_fragment.newInstance())
+                    .replace(R.id.container, onBoarding1_fragment.newInstance())
                     .commitNow();
         }
         FrameLayout cont = findViewById(R.id.container);
