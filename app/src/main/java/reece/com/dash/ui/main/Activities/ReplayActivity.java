@@ -1,33 +1,27 @@
-package reece.com.dash;
+package reece.com.dash.ui.main.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.FileProvider;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-import java.io.File;
-import java.net.URI;
-
+import reece.com.dash.R;
 
 
 /*
 Plays the last recorded buffer
  */
-public class Replay extends AppCompatActivity {
+public class ReplayActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_replay);
+        setContentView(R.layout.replay_activity);
 
         String path;
         if (savedInstanceState == null) {

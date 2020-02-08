@@ -1,4 +1,4 @@
-package reece.com.dash.ui.main;
+package reece.com.dash.ui.main.Fragments;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import reece.com.dash.R;
+import reece.com.dash.ui.main.MainViewModel;
 
 public class onBoarding1_fragment extends Fragment {
 
@@ -22,18 +23,9 @@ public class onBoarding1_fragment extends Fragment {
         return new onBoarding1_fragment();
     }
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.onboarding1_fragment, container, false);
     }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
-        // TODO: Use the ViewModel
-    }
-
 }
+

@@ -1,8 +1,6 @@
-package reece.com.dash;
+package reece.com.dash.ui.main.Activities;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Matrix;
 import android.os.Bundle;
@@ -34,6 +32,9 @@ import androidx.core.content.ContextCompat;
 import androidx.lifecycle.LifecycleOwner;
 
 import java.io.File;
+
+import reece.com.dash.Recording.ImageAnalyzerBuffer;
+import reece.com.dash.R;
 
 /*
 Use of CamneraX can be found on DOCS but it is written in Kotlin.

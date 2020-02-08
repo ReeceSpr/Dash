@@ -18,13 +18,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Launcher"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Replay"></activity>
+        <activity android:name=".ui.main.Activities.ReplayActivity"></activity>
         <activity
-            android:name=".CameraActivity"
+            android:name=".ui.main.Activities.CameraActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_camera"
             />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.main.Activities.OnboardingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

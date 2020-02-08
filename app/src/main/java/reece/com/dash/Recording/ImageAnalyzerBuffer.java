@@ -1,4 +1,4 @@
-package reece.com.dash;
+package reece.com.dash.Recording;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -6,7 +6,6 @@ import android.graphics.ImageFormat;
 import android.graphics.Rect;
 import android.graphics.YuvImage;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import androidx.camera.core.ImageAnalysis;
 import androidx.camera.core.ImageProxy;

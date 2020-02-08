@@ -1,17 +1,14 @@
-package reece.com.dash;
+package reece.com.dash.Recording;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import org.jcodec.api.android.AndroidSequenceEncoder;
 import org.jcodec.common.io.NIOUtils;
@@ -19,7 +16,8 @@ import org.jcodec.common.io.SeekableByteChannel;
 import org.jcodec.common.model.Rational;
 
 import java.io.File;
-import java.lang.ref.WeakReference;
+
+import reece.com.dash.ui.main.Activities.ReplayActivity;
 
 /*
 Base Code From Assignment 1
@@ -76,7 +74,7 @@ public class EncodeASyncTask extends AsyncTask<Void, Void, Bitmap> {
             NIOUtils.closeQuietly(out);
         }
         //imgview.setBackgroundColor(Color.RED);
-        /*Intent intent = new Intent(mContext, Replay.class);
+        /*Intent intent = new Intent(mContext, ReplayActivity.class);
         mContext.startActivity(intent);*/
         System.out.println("DONE ENCODING!");
 
@@ -99,7 +97,7 @@ public class EncodeASyncTask extends AsyncTask<Void, Void, Bitmap> {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, Replay.class);
+                Intent intent = new Intent(mContext, ReplayActivity.class);
                 intent.putExtra("fpath", file.getAbsolutePath());
                 mContext.startActivity(intent);
             }
