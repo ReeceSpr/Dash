@@ -14,18 +14,21 @@ import reece.com.dash.ui.main.onBoarding3_fragment;
 
 /*
     Drive for Mobile App Assignment
+    ID: 17046764 and 13049535
+    Name: Reece and Josh
+
 
     x Sort onBoarding Function
-    - Add Animation
+    x Add Animation
 
     x Create CameraLayout
-    - CameraActivity Permissions
+    x CameraActivity Permissions
     - Opt 1. Recording, double tap starts recording until long tapped
 
     - Gallery for viewing recordings/info. Time/Date
     - Submittable.
 
-    - Opt 2. Circular encoding.
+    X Opt 2. Circular encoding.
     - Speed in info.
     - Music Control.
 

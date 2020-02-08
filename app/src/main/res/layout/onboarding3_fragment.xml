@@ -47,16 +47,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/imageViewSwipe"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@mipmap/ic_launcher_round"
+        android:background="@color/black_overlay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FeatureDescrip"
         app:layout_constraintVertical_bias="0.25"
-        app:srcCompat="@android:drawable/arrow_up_float" />
+        app:srcCompat="@drawable/ic_arrowup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

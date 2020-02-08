@@ -21,6 +21,9 @@ import org.jcodec.common.model.Rational;
 import java.io.File;
 import java.lang.ref.WeakReference;
 
+/*
+Base Code From Assignment 1
+ */
 public class EncodeASyncTask extends AsyncTask<Void, Void, Bitmap> {
 
 
@@ -98,7 +101,6 @@ public class EncodeASyncTask extends AsyncTask<Void, Void, Bitmap> {
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, Replay.class);
                 intent.putExtra("fpath", file.getAbsolutePath());
-                CameraActivity.thumbPath = file.getAbsolutePath();
                 mContext.startActivity(intent);
             }
         });

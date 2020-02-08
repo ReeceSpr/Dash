@@ -22,7 +22,6 @@ https://stackoverflow.com/questions/56772967/converting-imageproxy-to-bitmap
  */
 
 
-
 public class ImageAnalyzerBuffer implements ImageAnalysis.Analyzer{
 
     private CircularBitmapArray buffer;

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="500" width="500">
+  <defs>
+    <ellipse id="ellipse-1" opacity="1" rx="200" ry="200" cx="250" cy="250"/>
+    <filter id="filter-2" filterUnits="userSpaceOnUse" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset in="SourceAlpha" result="shadow-1-feOffset-shadow" dx="0" dy="2"/>
+      <feGaussianBlur in="shadow-1-feOffset-shadow" result="shadow-1-feGaussianBlur-shadow" stdDeviation="2"/>
+      <feColorMatrix in="shadow-1-feGaussianBlur-shadow" result="shadow-1-feColorMatrix-shadow" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g>
+    <g opacity="1">
+      <use xlink:href="#ellipse-1" fill="black" filter="url(#filter-2)" stroke="black" stroke-opacity="0" stroke-width="0"/>
+      <use xlink:href="#ellipse-1" fill="rgb(0,0,0)" fill-opacity="1"/>
+    </g>
+    <g opacity="1">
+      <path fill="rgb(255,255,255)" fill-opacity="1" opacity="1" fill-rule="evenodd" d="M248.5 73L251.5 73C262.53830048988 73 271.5 81.96169951012 271.5 93L271.5 207C271.5 218.03830048988 262.53830048988 227 251.5 227L248.5 227C237.46169951012 227 228.5 218.03830048988 228.5 207L228.5 93C228.5 81.96169951012 237.46169951011998 73 248.5 73Z"/>
+    </g>
+    <g opacity="1">
+      <path fill="rgb(255,255,255)" fill-opacity="1" opacity="1" fill-rule="evenodd" d="M248.5 273L251.5 273C262.53830048988 273 271.5 281.96169951012 271.5 293L271.5 407C271.5 418.03830048988 262.53830048988 427 251.5 427L248.5 427C237.46169951012 427 228.5 418.03830048988 228.5 407L228.5 293C228.5 281.96169951012 237.46169951011998 273 248.5 273Z"/>
+    </g>
+  </g>
+</svg>

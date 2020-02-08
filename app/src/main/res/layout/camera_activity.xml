@@ -70,7 +70,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.75" />
+            app:layout_constraintVertical_bias="0.65" />
 
         <ImageButton
             android:id="@+id/imageButtonGallery"
@@ -82,7 +82,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewTime"
-            app:layout_constraintVertical_bias="0.32999998" />
+            app:layout_constraintVertical_bias="0.13999999" />
 
         <ImageButton
             android:id="@+id/imageButton_capture"
@@ -93,7 +93,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButtonGallery"
-            app:layout_constraintVertical_bias="0.31" />
+            app:layout_constraintVertical_bias="0.18" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

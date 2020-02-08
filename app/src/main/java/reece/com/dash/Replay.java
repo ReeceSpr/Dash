@@ -17,6 +17,11 @@ import android.widget.VideoView;
 import java.io.File;
 import java.net.URI;
 
+
+
+/*
+Plays the last recorded buffer
+ */
 public class Replay extends AppCompatActivity {
 
     @Override
