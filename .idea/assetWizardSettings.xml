@@ -63,8 +63,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="000000" />
-                                      <entry key="foregroundImage" value="C:\Users\Reece\Documents\dash\Design\Icon.svg" />
+                                      <entry key="foregroundImage" value="C:\Users\Reece\Documents\dash\Design\Get Started background.svg" />
+                                      <entry key="outputName" value="buttonBackgroundGetStarted" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -133,8 +133,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_splashscreen" />
-                            <entry key="sourceFile" value="C:\Users\Reece\Documents\dash\Design\SplashScreen.svg" />
+                            <entry key="outputName" value="ic_permissions" />
+                            <entry key="sourceFile" value="C:\Users\Reece\Documents\dash\Design\Permissions.svg" />
                           </map>
                         </option>
                       </PersistentState>

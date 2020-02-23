@@ -3,8 +3,14 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <string name="title_activity_camera">Camera</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="feature1_Title">Double Tap Save</string>
+    <string name="feature1_description">Save the last 5 minutes of recording by double tapping the screen.</string>
+    <string name="feature2_Title">Circular Buffer</string>
+    <string name="feature2_description">Only save incidents, keep your storage.</string>
+    <string name="feature3_Title">Permissions</string>
+    <string name="feature3_description">You may be asked for permissions to use the camera.</string>
+    <string name="get_started">Get Started!</string>
 </resources>

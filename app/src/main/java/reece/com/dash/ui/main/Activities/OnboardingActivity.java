@@ -1,7 +1,10 @@
 package reece.com.dash.ui.main.Activities;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
@@ -36,11 +39,13 @@ import reece.com.dash.ui.main.Fragments.onBoarding3_fragment;
 
 
 
-public class OnboardingActivity extends FragmentActivity {
+public class OnboardingActivity extends AppCompatActivity {
     /**
-     * The number of pages (wizard steps) to show in this demo.
+     * Number of onBoardingPages
      */
     private static final int NUM_PAGES = 3;
+
+    ImageView[] dots =  new ImageView[3];
 
     /**
      * The pager widget, which handles animation and allows swiping horizontally to access previous
@@ -56,12 +61,26 @@ public class OnboardingActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.Onboarding);
+        setContentView(R.layout.onboarding_activity);
+
 
         // Instantiate a ViewPager2 and a PagerAdapter.
         viewPager = findViewById(R.id.pager);
         pagerAdapter = new ScreenSlidePagerAdapter(this);
         viewPager.setAdapter(pagerAdapter);
+        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                buttonChange(position);
+                super.onPageSelected(position);
+            }
+        });
+
+        dots[0] = findViewById(R.id.dot0);
+        dots[1] = findViewById(R.id.dot1);
+        dots[2] = findViewById(R.id.dot2);
+
+
     }
 
     @Override
@@ -81,12 +100,14 @@ public class OnboardingActivity extends FragmentActivity {
      * sequence.
      */
     private class ScreenSlidePagerAdapter extends FragmentStateAdapter {
-        public ScreenSlidePagerAdapter(FragmentActivity fa) {
+        ScreenSlidePagerAdapter(FragmentActivity fa) {
             super(fa);
         }
 
+        @NonNull
         @Override
         public Fragment createFragment(int position) {
+
             switch (position){
                 case 0:
                     return  new onBoarding1_fragment();
@@ -101,5 +122,27 @@ public class OnboardingActivity extends FragmentActivity {
         public int getItemCount() {
             return NUM_PAGES;
         }
+
+    }
+
+    public void buttonChange(int pos){
+        switch (pos){
+            case 0:
+                dots[0].setImageResource(R.drawable.ic_buttonon);
+                dots[1].setImageResource(R.drawable.ic_buttonoff);
+                dots[2].setImageResource(R.drawable.ic_buttonoff);
+                break;
+            case 1:
+                dots[1].setImageResource(R.drawable.ic_buttonon);
+                dots[0].setImageResource(R.drawable.ic_buttonoff);
+                dots[2].setImageResource(R.drawable.ic_buttonoff);
+                break;
+            case 2:
+                dots[2].setImageResource(R.drawable.ic_buttonon);
+                dots[0].setImageResource(R.drawable.ic_buttonoff);
+                dots[1].setImageResource(R.drawable.ic_buttonoff);
+                break;
+        }
+
     }
 }
