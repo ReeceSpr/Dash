@@ -1,10 +1,16 @@
 package reece.com.dash.ui.main.Activities;
 
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
@@ -45,6 +51,10 @@ public class OnboardingActivity extends AppCompatActivity {
      */
     private static final int NUM_PAGES = 3;
 
+    private int REQUEST_CODE_PERMISSIONS = 10; //arbitrary number, can be changed accordingly
+    private final String[] REQUIRED_PERMISSIONS = new String[]{"android.permission.CAMERA", "android.permission.WRITE_EXTERNAL_STORAGE"};//,"android.permission.WRITE_EXTERNAL_STORAGE"}; //array w/ permissions from manifest
+
+
     ImageView[] dots =  new ImageView[3];
 
     /**
@@ -57,6 +67,8 @@ public class OnboardingActivity extends AppCompatActivity {
      * The pager adapter, which provides the pages to the view pager widget.
      */
     private FragmentStateAdapter pagerAdapter;
+
+    private View.OnClickListener getStartedClickListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +83,11 @@ public class OnboardingActivity extends AppCompatActivity {
         viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
-                buttonChange(position);
+                if(position == 2) {
+                    createGetStartedListener();
+                    findViewById(R.id.getStartedButton).setOnClickListener(getStartedClickListener);
+                }
+                dotChange(position);
                 super.onPageSelected(position);
             }
         });
@@ -125,7 +141,7 @@ public class OnboardingActivity extends AppCompatActivity {
 
     }
 
-    public void buttonChange(int pos){
+    public void dotChange(int pos){
         switch (pos){
             case 0:
                 dots[0].setImageResource(R.drawable.ic_buttonon);
@@ -144,5 +160,50 @@ public class OnboardingActivity extends AppCompatActivity {
                 break;
         }
 
+    }
+
+
+    public void createGetStartedListener (){
+        getStartedClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                permissions();
+            }
+        };
+    }
+
+    public void permissions(){
+        if(allPermissionsGranted()){
+            openCamera();
+        } else{
+            ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);
+            ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);
+        }
+    }
+
+    private boolean allPermissionsGranted(){
+        //check if req permissions have been granted
+        for(String permission : REQUIRED_PERMISSIONS){
+            if(ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        //start camera when permissions have been granted otherwise exit app
+        if(requestCode == REQUEST_CODE_PERMISSIONS){
+            if(allPermissionsGranted()){
+                openCamera();
+            } else{
+                Toast.makeText(this, "Permissions not granted by the user.", Toast.LENGTH_SHORT).show();
+                //finish();
+            }
+        }
+    }
+    public void openCamera(){
+        startActivity(new Intent(this , CameraActivity.class));
     }
 }

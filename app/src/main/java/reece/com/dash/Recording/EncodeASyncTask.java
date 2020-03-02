@@ -16,6 +16,9 @@ import org.jcodec.common.io.SeekableByteChannel;
 import org.jcodec.common.model.Rational;
 
 import java.io.File;
+import java.sql.SQLOutput;
+import java.util.Timer;
+
 
 import reece.com.dash.ui.main.Activities.ReplayActivity;
 
@@ -44,6 +47,7 @@ public class EncodeASyncTask extends AsyncTask<Void, Void, Bitmap> {
 
     @Override
     protected Bitmap doInBackground(Void... voids) {
+        long startTime = System.currentTimeMillis();
         System.out.println("ENCODING..." + index);
         SeekableByteChannel out = null;
         String path = "";
@@ -85,6 +89,8 @@ public class EncodeASyncTask extends AsyncTask<Void, Void, Bitmap> {
                 MediaStore.Video.Media.EXTERNAL_CONTENT_URI, values);
 
         //mContext.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.fromFile(file)));
+        long endTime = System.currentTimeMillis();
+        System.out.println("ENCODING OF SIZE: " + array.length + " FRAMES. TIME TAKEN:" + (startTime-endTime/1000) + "sec");
         return convertToBitmapFromJpeg(this.array[0]);
     }
 
