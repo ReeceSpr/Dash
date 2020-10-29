@@ -48,8 +48,6 @@ https://github.com/thunderedge/CameraX
  * status bar and navigation/system bar) with user interaction.
  */
 public class CameraActivity extends AppCompatActivity {
-    private int REQUEST_CODE_PERMISSIONS = 10; //arbitrary number, can be changed accordingly
-    private final String[] REQUIRED_PERMISSIONS = new String[]{"android.permission.CAMERA", "android.permission.WRITE_EXTERNAL_STORAGE"};//,"android.permission.WRITE_EXTERNAL_STORAGE"}; //array w/ permissions from manifest
     TextureView txView;
     ImageAnalyzerBuffer imageAnalyzerBuffer;
 
@@ -142,21 +140,13 @@ public class CameraActivity extends AppCompatActivity {
                 toggle();
             }
         });
-
-        txView = findViewById(R.id.textureView_Camera);
-
-        if(allPermissionsGranted()){
-            startCamera(); //start camera if permission has been granted by user
-        } else{
-            ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);
-            ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);
-        }
+        startCamera();
     }
+
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-
         // Trigger the initial hide() shortly after the activity has been
         // created, to briefly hint to the user that UI controls
         // are available.
@@ -214,7 +204,7 @@ public class CameraActivity extends AppCompatActivity {
     private void startCamera() {
         //make sure there isn't another camera instance running before starting
         CameraX.unbindAll();
-
+        txView = findViewById(R.id.textureView_Camera);
         /* start preview */
         int aspRatioW = txView.getWidth(); //get width of screen
         int aspRatioH = txView.getHeight(); //get height
@@ -325,6 +315,7 @@ public class CameraActivity extends AppCompatActivity {
         txView.setTransform(mx); //apply transformations to textureview
     }
 
+    /*
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         //start camera when permissions have been granted otherwise exit app
@@ -347,6 +338,6 @@ public class CameraActivity extends AppCompatActivity {
         }
         return true;
     }
-
+    */
 }
 
